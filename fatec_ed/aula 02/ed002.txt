@@ -1,0 +1,43 @@
+1)Y = 4
+-----------------------------------------------------------
+2)a)
+	p++    = o *valor de p* (endereço da variavel apontada) + 1 (ele passa para o endereço da proxima variavél)
+	(*p)++ = o *valor da variavel* em que p está sendo apontado igual a ele mesmo + 1 (incrementado 1)
+	*(++p) = acessa o valor de p + 1 (o proximo endereço na memoria)
+ b)
+	*(p+10) = acessa o valor de p + 10 (igual o item a)3, só que acessa 10 endereços após).
+-----------------------------------------------------------
+3)x = 3
+  y = 4
+  p = endereço de Y
+------------------------------------------------------------
+4)
+#include <stdio.h>
+#include <string.h>
+void main() {
+    int x, *p;
+    x = 100;
+    p = &x;
+    printf("Valor de p: %d\n", *p);
+
+    // c)
+    char a[] = "abacate", b[] = "uva";
+
+    if (strcmp(a, b) < 0) {printf("%s vem antes de %s no dicionario", a, b);}
+    else{printf("%s vem depois de %s no dicionario", a, b);}
+
+}
+// b)
+void troca(int *i, int *j){
+    int temp;
+    temp = *i;
+    *i = *j;
+    *j = temp;
+}
+------------------------------------------------------------
+5)void troca(float *a, float *b){
+int temp;
+    temp = *a;
+    *a = *b;
+    *b = temp;
+}

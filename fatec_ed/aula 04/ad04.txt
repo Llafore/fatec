@@ -1,0 +1,3 @@
+1.Uma pilha é uma estrutura de dados linear que segue o princípio de LIFO (Last In, First Out), o que significa que o último elemento inserido na pilha é o primeiro a ser removido. Em termos simples, é como uma pilha de pratos, onde você só pode adicionar ou remover um prato no topo da pilha.
+2.PUSH: O método PUSH é usado para adicionar um novo elemento à pilha.
+O método POP é usado para remover o elemento mais recente (topo) da pilha.

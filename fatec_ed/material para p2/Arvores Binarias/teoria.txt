@@ -1,0 +1,5 @@
+Uma árvore binária de busca é uma estrutura de dados baseada em nós. Todo nó possui (ou irá possuir) dois outros nós, um a sua esquerda, que possui um valor inferior ao seu nó raiz, e outro a direita, que possui um valor superior ao seu nó raiz. Essa estrutura visa estruturar os dados de forma flexível, permitindo a pesquisa binária.
+O algorítimos de pesquisa de um valor em uma árvore binaria se baseia em três condições: 
+	Se o número pesquisado for igual ao nó atual, o número foi encontrado. 
+	Se o número pesquisado for menor ao nó atual, a busca continua na sub arvore a esquerda
+	Se o número pesquisado for maior ao nó atual, a busca continua na sub arvore a direita

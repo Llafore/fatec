@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <h1 style="color:red">Contato</h1>
+    <p><i>Seja bem vindo, preencha o <b>formulario</b> abaixo para:</i></p>
+    <li class="topico">duvidas</li>
+    <li class="topico">sugestões</li>
+    <li class="topico">criticas</li>
+    <li class="topico">Orçamentos</li>
+    <p>Caso queira ver nossos produtos, clique <a href="#" onclick="alert('Area em construção, volte em breve')">aqui</a></p>
+    <label id="dados">nome: 
+    <input type="text" placeholder="Digite seu nome" required> <br> </label>
+    <label id="dados">email:
+    <input type="email" placeholder="Digite seu email"> <br></label>
+    <label id="dados">telefone:
+    <input type="text" pattern="\d{5}-\d{4}" placeholder="Digite seu telefone (DD) 91234-5678"> <br> </label>
+    <label id="dados">assunto:
+    <select name="assunto" id="assuno">
+      <option value="Duvidas">Duvidas</option>  
+    </select> <br></label>
+    Deseja receber uma copia desse e-mail? 
+    <input type="radio" name="desejas">sim
+    <input type="radio" name="desejas">não <br>
+    mensagem: <textarea name="" id=""></textarea><br>
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>

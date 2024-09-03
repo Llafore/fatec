@@ -1,0 +1,60 @@
+[{
+  "_id": "1",
+  "consulta_id": "1",
+  "data": "2023-03-15",
+  "desconto": 0.1
+},
+{
+  "_id": "2",
+  "consulta_id": "2",
+  "data": "2023-03-16",
+  "desconto": 0.05
+},
+{
+  "_id": "3",
+  "consulta_id": "3",
+  "data": "2023-03-17",
+  "desconto": 0
+},
+{
+  "_id": "4",
+  "consulta_id": "4",
+  "data": "2023-03-18",
+  "desconto": 0.15
+},
+{
+  "_id": "5",
+  "consulta_id": "5",
+  "data": "2021-06-19",
+  "desconto": 0.08
+},
+{
+  "_id": "6",
+  "consulta_id": "6",
+  "data": "2021-06-20",
+  "desconto": 0.02
+},
+{
+  "_id": "7",
+  "consulta_id": "7",
+  "data": "2021-06-21",
+  "desconto": 0.12
+},
+{
+  "_id": "8",
+  "consulta_id": "8",
+  "data": "2021-06-22",
+  "desconto": 0.07
+},
+{
+  "_id": "9",
+  "consulta_id": "9",
+  "data": "2021-06-23",
+  "desconto": 0.04
+},
+{
+  "_id": "10",
+  "consulta_id": "10",
+  "data": "2021-06-24",
+  "desconto": 0.09
+}]

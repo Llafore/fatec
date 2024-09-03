@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "6657432067c1f1f44a466c4c"
+  },
+  "nome": "Luis",
+  "cpf": "123",
+  "data_nasc": "13/07/2004",
+  "email": "luis@mail.com",
+  "id": "1"
+},
+{
+  "_id": {
+    "$oid": "6657439167c1f1f44a466c4d"
+  },
+  "nome": "Lucas",
+  "cpf": "456",
+  "data_nasc": "04/02/2003",
+  "email": "luc@mail.com",
+  "id": "2"
+},
+{
+  "_id": {
+    "$oid": "665743b067c1f1f44a466c4e"
+  },
+  "nome": "Jorge",
+  "cpf": "123",
+  "data_nasc": "03/04/1998",
+  "email": "jorg@mail.com",
+  "id": "3"
+}]

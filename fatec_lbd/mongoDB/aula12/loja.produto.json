@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "66570c04b01480be6551f052"
+  },
+  "codigo": "1",
+  "nome": "caneta",
+  "valor": "3",
+  "descritivo": "caneta de pena"
+},
+{
+  "_id": {
+    "$oid": "6657409467c1f1f44a466c42"
+  },
+  "codigo": "2",
+  "nome": "lapis",
+  "valor": "1",
+  "descritivo": ""
+},
+{
+  "_id": {
+    "$oid": "665742f967c1f1f44a466c4a"
+  },
+  "codigo": "3",
+  "nome": "apontador",
+  "valor": "5",
+  "descritivo": "Apontador de Lapís"
+}]

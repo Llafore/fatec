@@ -1,0 +1,19 @@
+Busca Sequencial
+        Funcionamento:
+    A busca sequencial, também conhecida como busca linear, percorre uma lista ou array elemento por elemento, comparando cada um deles com o valor de busca.
+    Se encontrar o valor, retorna o índice ou a posição do elemento; caso contrário, continua até o fim da lista.
+    Vantagens:
+        Simplicidade de implementação.
+    Não requer que os dados estejam ordenados.
+    Desvantagens:
+        Ineficiente para grandes conjuntos de dados, pois a complexidade é O(n), onde n é o número de elementos na lista.
+Busca Binária
+    Funcionamento:
+        A busca binária funciona em uma lista ordenada dividindo repetidamente o espaço de busca pela metade.
+    Compara o elemento do meio com o valor de busca. Se o valor for igual ao do meio, retorna a posição.
+    Se o valor de busca for menor, repete o processo na metade esquerda; se maior, na metade direita.
+    Vantagens:
+        Muito mais eficiente para grandes conjuntos de dados em comparação com a busca sequencial. A complexidade é O(log n).
+    Desvantagens:
+        Requer que os dados estejam ordenados.
+    Mais complexa de implementar do que a busca sequencial.

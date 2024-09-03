@@ -1,0 +1,54 @@
+1.O que são listas e quais seus tipos? Exemplifique
+    * Lista Simples
+        Um conjunto de variáveis (onde todas pertencem ao mesmo TAD), sendo que todos os itens possuem o endereço do próximo item da lista
+
+    * Lista Circular
+        Tudo que a Lista Simples é, mas a última variável possui o endereço da primeira, como próxima
+
+    * Lista Duplamente Ligada
+        Tudo que a Lista Circular, mas todas as variáveis possuem o endereço do item anterior (permitindo o fluxo por ambas direções)
+
+2.O que são arvores binarias de busca e qual a sua utilização?
+    Uma árvore binária de busca é uma estrutura de dados baseada em nós. Todo nó possui (ou irá possuir) dois outros nós, um a sua esquerda, que possui um valor inferior ao seu nó raiz, e outro a direita, que possui um valor superior ao seu nó raiz. Essa estrutura visa estruturar os dados de forma flexível, permitindo a pesquisa binária.
+    O algorítimos de pesquisa de um valor em uma árvore binaria se baseia em três condições: 
+        Se o número pesquisado for igual ao nó atual, o número foi encontrado. 
+        Se o número pesquisado for menor ao nó atual, a busca continua na sub arvore a esquerda
+        Se o número pesquisado for maior ao nó atual, a busca continua na sub arvore a direita
+    Utiliazda principalmente em contextos onde os dados possuem uma sequencia fixa, e podem ser acessados rapidamente, como em um programa de GPS, ou em uma IA
+
+3.Faça um comparativo entre os métodos de ordenação Bubble Sort e Insertion Sort, exemplifique
+    * Bubble sort é o mais simples e menos eficiente dos algoritmos estudados nas últimas aulas, nele, cada elemento será comparado com o próximo elemento, e se for maior que ele, trocará de posição, passando assim por todos os elementos do array. Na próxima vez que passar pelo array, não precisará consultar o último algarismo, tornando assim, o vetor cada vez menor, até que o único elemento a ser comparado seja o primeiro.
+    void bubbleSort(int *arr, int len){
+        int aux, i, j;
+        printf("%i\n",len);
+        for(j=len-1; j>=1; j--){
+            for(i=0; i<j; i++){
+                if(arr[i]>arr[i+1]){
+                    aux=arr[i];
+                        arr[i]=arr[i+1];
+                        arr[i+1]=aux;
+                    }
+                }
+            }
+    }
+
+    * Insertion sort é simples e eficiente em pequenas listas. O algorismo n é comparado com o n+1, e faz a troca se n>n+1, então, o maior deles é comparado com n+2, e se o maior entre n e n+1 for maior que n+2, a troca é realizada. 
+    void insertionSort( int *v, int len ) 
+    {
+        int n= 0;
+        int nMaisUm= 1;
+        int aux = 0;
+        while (nMaisUm < len) {
+            aux = v[nMaisUm];
+            n = nMaisUm - 1;
+            while ((n >= 0) && (v[n] > aux)) {
+                v[n + 1] = v[n];
+                n = n - 1;
+            }
+            v[n + 1] = aux;
+            nMaisUm = nMaisUm + 1;
+        }
+    }
+
+4.Quando utilizamos uma pesquisa sequencial e quando usamos uma pesquisa binaria e qual a sua relação com os algoritmos de ordenação?
+A pesquisa sequencial deve ser usada em dados que não possuem ordenação ou conjuntos pequenos de dados, já a pesquisa binária, em grandes conjuntos de dados que estão organizados

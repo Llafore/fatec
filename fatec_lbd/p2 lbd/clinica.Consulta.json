@@ -1,0 +1,80 @@
+[{
+  "_id": "1",
+  "data": "2023-03-15 10:00:00",
+  "medico_id": "1",
+  "paciente_id": "1",
+  "historico": "Paciente relata dor no peito.",
+  "status": "Agendada"
+},
+{
+  "_id": "2",
+  "data": "2023-03-16 14:30:00",
+  "medico_id": "2",
+  "paciente_id": "2",
+  "historico": "Criança com febre alta.",
+  "status": "Concluída"
+},
+{
+  "_id": "3",
+  "data": "2023-03-17 16:00:00",
+  "medico_id": "3",
+  "paciente_id": "3",
+  "historico": "Queixa de dor no joelho.",
+  "status": "Cancelada"
+},
+{
+  "_id": "4",
+  "data": "2023-03-18 09:00:00",
+  "medico_id": "4",
+  "paciente_id": "4",
+  "historico": "Consulta de rotina.",
+  "status": "Agendada"
+},
+{
+  "_id": "5",
+  "data": "2023-03-19 11:30:00",
+  "medico_id": "5",
+  "paciente_id": "5",
+  "historico": "Dor de cabeça constante.",
+  "status": "Concluída"
+},
+{
+  "_id": "6",
+  "data": "2023-03-20 15:00:00",
+  "medico_id": "6",
+  "paciente_id": "6",
+  "historico": "Problemas de pele.",
+  "status": "Agendada"
+},
+{
+  "_id": "7",
+  "data": "2023-03-21 17:00:00",
+  "medico_id": "7",
+  "paciente_id": "7",
+  "historico": "Consulta de acompanhamento.",
+  "status": "Concluída"
+},
+{
+  "_id": "8",
+  "data": "2023-03-22 10:30:00",
+  "medico_id": "8",
+  "paciente_id": "8",
+  "historico": "Ansiedade e depressão.",
+  "status": "Agendada"
+},
+{
+  "_id": "9",
+  "data": "2023-03-23 14:00:00",
+  "medico_id": "9",
+  "paciente_id": "9",
+  "historico": "Problemas urinários.",
+  "status": "Concluída"
+},
+{
+  "_id": "10",
+  "data": "2023-03-24 16:30:00",
+  "medico_id": "10",
+  "paciente_id": "10",
+  "historico": "Controle de diabetes.",
+  "status": "Agendada"
+}]

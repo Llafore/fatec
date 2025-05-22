@@ -1,0 +1,25 @@
+<div class="cesta-container">
+    <h1>Cesta de Produtos</h1>
+  
+    <div class="itens-container">
+      <!-- Repetir essa div para cada item da cesta -->
+      <div class="item-cesta" *ngFor="let item of itens">
+        <img [src]="item.imagem" alt="{{item.nome}}" class="imagem-produto" />
+        <div class="descricao-produto">
+          <label class="nome-produto">{{ item.nome }}</label>
+          <label class="quantidade-produto">Qtd: {{ item.quantidade }}x</label>
+          <label class="valor-produto">R$ {{ item.valor }}</label>
+        </div>
+      </div>
+    </div>
+  
+    <div class="total-container">
+      <label class="total-label">Total: R$ {{ total }}</label>
+    </div>
+  
+    <div class="acoes">
+      <button mat-flat-button color="primary" (click)="limparCesta()">Limpar</button>
+      <button mat-flat-button color="accent" (click)="finalizarCesta()">Finalizar</button>
+    </div>
+  </div>
+  

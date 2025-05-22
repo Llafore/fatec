@@ -1,0 +1,31 @@
+Aplicações Vite: 
+1. criação da aplicação: 
+	npm create vite nome_aplicacao -- --template react
+
+
+2. Limpeza da aplicação:
+	Remover todos arquivos *css
+	Limpar o arquivo App.jsx 
+	Remover a importação dos arquivos css do arquivo main.jsx
+
+
+3. Instalar os packages
+	npm install
+	npm i primereact (instalar a primereact para componentes e temas)
+	npm i primeflex (instalar a primeflex para grid sistem)
+	npm i primeicon (instalar a primeicon para icones)
+	npm i react-dotenv (para instalar a lib de envoriments)
+	npm i (sua api)
+(opcional) 
+	3.1 Configurar o react-dotenv:
+		3.1.1 Criar o arquivo .env na raiz do projeto
+		3.1.2 No package.json:
+			3.1.2.1: no objeto "scripts", alterar o valor de "dev" para "react-dotenv && vite" ( faz com que o projeto rode com o dotenv)
+			3.1.2.2: criar o objeto "react-dotenv", e dentro dele, adicionar a propriedade "whitelist", que é um array com o nome de todas variavéis de ambiente
+		3.1.3 ir no arquivo node_modules/react_dot-env/src/cli.sj, na linha 47, alterar o path para que encontre o index.html (na raiz do projeto)
+	3.2 Utilizando react-dotenv
+		3.2.1 importa o objeto: import env from 'react-dotenv'
+		3.2.2 utiliza ele assim: env.`nome da sua key`
+
+4. Colocar a aplicação no ar
+	npm run dev

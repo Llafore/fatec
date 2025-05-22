@@ -1,0 +1,26 @@
+<div class="login-container">
+  <mat-card class="login-card">
+    <mat-card-header>
+      <mat-card-title>Login</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form [formGroup]="loginForm" (ngSubmit)="onEntrar()">
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Email</mat-label>
+          <input matInput formControlName="email">
+          <mat-error *ngIf="loginForm.get('email')?.invalid">E-mail inválido</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Senha</mat-label>
+          <input matInput type="password" formControlName="senha">
+          <mat-error *ngIf="loginForm.get('senha')?.invalid">Mínimo 6 caracteres</mat-error>
+        </mat-form-field>
+        <div class="acoes">
+          <button mat-flat-button color="primary" type="submit">Entrar</button>
+          <label>Não possui conta?</label>
+          <button mat-flat-button color="accent" type="button" (click)="irParaCadastro()">Clique aqui</button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

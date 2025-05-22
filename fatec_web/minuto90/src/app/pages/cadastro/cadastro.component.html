@@ -1,0 +1,32 @@
+<div class="cadastro-container">
+  <mat-card class="cadastro-card">
+    <mat-card-header>
+      <mat-card-title>Cadastro</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form [formGroup]="cadastroForm" (ngSubmit)="onCriarConta()">
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Nome</mat-label>
+          <input matInput formControlName="nome">
+          <mat-error *ngIf="cadastroForm.get('nome')?.invalid">Nome é obrigatório</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Email</mat-label>
+          <input matInput formControlName="email">
+          <mat-error *ngIf="cadastroForm.get('email')?.invalid">E-mail inválido</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Senha</mat-label>
+          <input matInput type="password" formControlName="senha">
+          <mat-error *ngIf="cadastroForm.get('senha')?.invalid">Mínimo 6 caracteres</mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Confirmar Senha</mat-label>
+          <input matInput type="password" formControlName="confirmaSenha">
+          <mat-error *ngIf="cadastroForm.get('confirmaSenha')?.invalid">As senhas não coincidem</mat-error>
+        </mat-form-field>
+          <button mat-flat-button color="primary" type="submit">Criar Conta</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

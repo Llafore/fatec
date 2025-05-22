@@ -1,0 +1,12 @@
+<h1>Meu Cadastro</h1>
+<b>{{mensagem}}</b><br>
+nome: <input type="text" [(ngModel)]="obj.nome"><br>
+email:<input type="email" [(ngModel)]="obj.email"><br>
+documento :<input type="text" [(ngModel)]="obj.documento"><br>
+telefone:<input type="text" [(ngModel)]="obj.telefone"><br>
+logradouro:<input type="text" [(ngModel)]="obj.logradouro"><br>
+cep:<input type="text" [(ngModel)]="obj.cep"><br>
+cidade:<input type="text" [(ngModel)]="obj.cidade"><br>
+complemento:<input type="text" [(ngModel)]="obj.complemento"><br>
+senha:<input type="password" [(ngModel)]="obj.senha"><br>
+<button (click)="gravar()">Gravar</button>

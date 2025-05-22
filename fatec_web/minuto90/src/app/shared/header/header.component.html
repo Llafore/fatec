@@ -1,0 +1,40 @@
+<header>
+    <mat-toolbar>
+      <div class="line1">
+        <button mat-fab class="icon-click" (click)="onHomeClick()">
+          <img src="assets/logo.png" alt="Logo Minuto90">
+        </button>
+  
+        <mat-form-field appearance="outline" class="custom-search-bar">
+          <mat-label>Pesquisar Produto</mat-label>
+          <input matInput  placeholder="Digite sua busca" [(ngModel)]="searchValue">
+          <button mat-icon-button matSuffix (click)="onSearchClick()"> 
+            <mat-icon>search</mat-icon>
+          </button>
+        </mat-form-field>
+        
+        
+  
+        <button mat-fab class="icon-click" (click)="onLoginClick()">
+          <img src="assets/login.png" alt="Login">
+        </button>
+      </div>
+  
+      <div class="line2">
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title>Categorias</mat-panel-title>
+            <mat-panel-description>Escolha uma categoria</mat-panel-description>
+          </mat-expansion-panel-header>
+          <nav>
+            <ul>
+              <li><a routerLink="/camisetas">Camisetas</a></li>
+              <li><a routerLink="/agasalhos">Agasalhos</a></li>
+              <li><a routerLink="/shorts">Shorts</a></li>
+            </ul>
+          </nav>
+        </mat-expansion-panel>
+      </div>
+    </mat-toolbar>
+  </header>
+  

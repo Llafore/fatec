@@ -1,0 +1,70 @@
+.cesta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    background: linear-gradient(to bottom, rgb(240, 127, 255), rgb(225, 0, 255));
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    margin: 0;
+    padding: 2%;
+    font-size: 3rem;
+    color: #303040;
+  }
+  
+  .itens-container {
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .item-cesta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .imagem-produto {
+    max-width: 120px;
+    max-height: 120px;
+  }
+  
+  .descricao-produto {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .nome-produto {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  
+  .quantidade-produto, .valor-produto {
+    font-size: 1.2rem;
+  }
+  
+  .total-container {
+    margin: 20px 0;
+  }
+  
+  .total-label {
+    font-size: 2rem;
+  }
+  
+  .acoes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+  }
+  

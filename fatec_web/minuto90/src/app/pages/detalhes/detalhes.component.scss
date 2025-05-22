@@ -1,0 +1,55 @@
+.detalhe-container{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, rgb(240, 127, 255), rgb(225, 0, 255));
+    display: flex;
+    padding: 5%;
+}
+.side-l{
+    flex: 0 0 30%;
+}
+.side-r{
+    flex: 0 0 60%;
+}
+mat-tab-group {
+    width: 100%;
+    height: auto; /* Ajuste conforme necessário */
+}
+.imagem{
+    background-color: rgb(250, 168, 250);
+    border-radius: 5%;
+}
+img {
+    width: 100%; /* Faz com que a imagem ocupe toda a largura do slide */
+    height: auto; /* Mantém a proporção da imagem */
+}
+h1{
+    color: #303040;
+    padding: 5%;
+    font-size: xx-large;
+}
+h3 {
+    color: #303040;
+    padding: 0 5%;
+    font-size: x-large;
+    text-align: right; /* Adiciona a propriedade para justificar à direita */
+}
+p{
+    color: white;
+    font-size: large;
+    padding: 2%;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 2%;
+}
+.botoes-produto{
+    height: 50px;
+    width: 100px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 1600;
+}
+.button-container {
+    display: flex; 
+    justify-content: center; /* Centraliza o botão horizontalmente */
+    width: 100%; /* Garante que a div ocupando todo o espaço disponível */
+}
